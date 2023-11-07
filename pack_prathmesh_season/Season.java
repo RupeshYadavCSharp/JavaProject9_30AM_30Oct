@@ -20,5 +20,9 @@ public class Season {
         else if(M==12 || M==1 || M==2) {
             System.out.println("Winter Season");
         }
+        else
+        {
+            System.out.println("Invalid choice");
+        }
     }
 }

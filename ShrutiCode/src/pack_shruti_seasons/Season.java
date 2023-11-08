@@ -10,7 +10,7 @@ public class Season {
         month=scan.nextInt();
         if(month==3 || month==4 || month==5)
         {
-            System.out.println("Summer \uD83D\uDD06 ");
+            System.out.println("Summer \uD83D ");
         } else if (month==6 || month==7 || month==8) {
             System.out.println("Rainy ☔\uD83C\uDF27 ");
             

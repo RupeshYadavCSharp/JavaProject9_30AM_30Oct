@@ -1,0 +1,275 @@
+DATE : 9th Nov 2023
+
+switch : used in multiple choice applications,
+where we have multiple choice and we have to pick any one choice
+at a time
+
+syntax:
+
+switch(choice)
+{
+	case value1:
+		code
+		break;
+	case value2:
+		code
+		break;
+	.
+	.
+	.
+	default:
+		code
+		break;
+}
+
+Note:
+1. the choice given input to switch cannot be a floating
+value
+
+2.default case is only optional
+
+3.writing break after every is also optional.
+
+
+//Calc code using switch
+package pack_switch;
+
+import pack_prathamesh_hello.Hello;
+
+import java.util.Scanner;
+
+
+/**
+ * this class represent switch case
+ */
+public class Calc
+{
+    /**
+     * Purpose : this main method demo switch case
+     * created by : Rupesh Yadav
+     * Date : 2023-07-11
+     * @param args
+     */
+    public static void main(String[] args) {
+
+       int choice,n1,n2,n3;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("1.Add\n2.Sub\nEnter choice");
+        choice = scan.nextInt();
+
+        switch (choice)
+        {
+            case 1:
+                System.out.println("----Addition------");
+                System.out.println("Enter 2 numbers ");
+                n1 = scan.nextInt();
+                n2 = scan.nextInt();
+                n3 = n1 + n2 ;
+                System.out.println("add is " + n3 );
+                break;
+
+            case 2:
+                System.out.println("----Subtraction------");
+                System.out.println("Enter 2 numbers ");
+                n1 = scan.nextInt();
+                n2 = scan.nextInt();
+                n3 = n1 - n2 ;
+                System.out.println("Sub is " + n3 );
+                break;
+            default:
+                System.out.println("invalid choice ");
+                break;
+
+
+        }
+
+    }
+}
+
+
+switch with character as choice
+
+package pack_switch;
+
+import pack_prathamesh_hello.Hello;
+
+import java.util.Scanner;
+
+
+/**
+ * this class represent switch case
+ */
+public class Calc
+{
+    /**
+     * Purpose : this main method demo switch case
+     * created by : Rupesh Yadav
+     * Date : 2023-07-11
+     * @param args
+     */
+    public static void main(String[] args) {
+
+       char choice ;
+       int n1,n2,n3;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("A.Add\nS.Sub\nEnter choice");
+        choice = scan.next().charAt(0); //"A"
+
+        switch (choice)
+        {
+            case 'A':
+            case 'a':
+            case '1':
+                System.out.println("----Addition------");
+                System.out.println("Enter 2 numbers ");
+                n1 = scan.nextInt();
+                n2 = scan.nextInt();
+                n3 = n1 + n2 ;
+                System.out.println("add is " + n3 );
+                break;
+
+            case 'S':
+            case 's':
+            case '2':
+                System.out.println("----Subtraction------");
+                System.out.println("Enter 2 numbers ");
+                n1 = scan.nextInt();
+                n2 = scan.nextInt();
+                n3 = n1 - n2 ;
+                System.out.println("Sub is " + n3 );
+                break;
+            default:
+                System.out.println("invalid choice ");
+                break;
+
+
+        }
+
+
+
+    }
+}
+
+
+TODO : atm code
+
+CASE 1:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+2
+
+Enter amt to deposit
+5000
+Deposit Success
+Curr bal is 15000
+
+
+CASE 2:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+3
+
+Invalid choice
+
+CASE 3:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+2
+
+Enter amt to deposit
+31000
+Deposit Limit Exceed
+
+CASE 4:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+1
+
+Enter amt to withdraw
+5000
+withdraw Success
+Curr bal is 5000
+
+
+CASE 5:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+1
+
+Enter amt to withdraw
+11000
+you have insufficient balance
+
+
+
+CASE 6:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+1
+
+Enter amt to withdraw
+5666
+amt shd be multiple of 100
+
+
+
+CASE 7:
+=========
+Enter your balance
+10000
+
+1.Withdraw
+2.Deposit
+Enter choice
+1
+
+Enter amt to withdraw
+-4500
+invalid amt entered
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

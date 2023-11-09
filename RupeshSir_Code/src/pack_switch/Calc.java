@@ -18,14 +18,17 @@ public class Calc
      */
     public static void main(String[] args) {
 
-       int choice,n1,n2,n3;
+       char choice ;
+       int n1,n2,n3;
         Scanner scan = new Scanner(System.in);
-        System.out.println("1.Add\n2.Sub\nEnter choice");
-        choice = scan.nextInt();
+        System.out.println("A.Add\nS.Sub\nEnter choice");
+        choice = scan.next().charAt(0); //"A"
 
         switch (choice)
         {
-            case 1:
+            case 'A':
+            case 'a':
+            case '1':
                 System.out.println("----Addition------");
                 System.out.println("Enter 2 numbers ");
                 n1 = scan.nextInt();
@@ -34,7 +37,9 @@ public class Calc
                 System.out.println("add is " + n3 );
                 break;
 
-            case 2:
+            case 'S':
+            case 's':
+            case '2':
                 System.out.println("----Subtraction------");
                 System.out.println("Enter 2 numbers ");
                 n1 = scan.nextInt();

@@ -259,6 +259,243 @@ invalid amt entered
 
 
 
+DATE : 20th NOV  ternary operator, for loop , jump statement
+Ternary Operator or Conditional operator
+=========================================
+? :
+
+syntax:
+
+(condition)? stm1 : stm2 ;
+
+if condition given is true than stm1 will get executed otherwise
+stm2 will get execute
+
+eg 1:
+========
+int x,y;
+x = 10;
+
+y = (x > 5) ? 100 : 200;
+
+sop(y);    //100
+
+
+eg : pos / neg
+
+package pack_ternary;
+
+import java.util.Scanner;
+
+public class Ternary
+{
+    public static void main(String[] args)
+    {
+        int num;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter any number ");
+        num = scan.nextInt();
+
+        String s = (num > 0) ? "positive" : "negative";
+
+        System.out.println(s);
+
+
+    }
+}
+
+
+TODO : rewrite above code for pos,neg and zero
+
+
+
+LOOPS:
+=========
+1) for
+2) while
+3) do while
+4) for each  (Arrays / Collections )
+
+steps:
+==========
+1) start  (initialization)
+2) end    (condition)
+3) steps  (iteration)
+
+for loop:
+============
+syntax:
+============
+for(initialization; condition ; iteration)
+{
+	stms
+}
+
+eg :
+package pack_forLoop;
+
+public class ForLoop
+{
+    public static void main(String[] args) {
+
+        for (int i = 1; i <=10 ; i++)
+        {
+            System.out.print(i + "   ");
+        }
+    }
+}
+
+OP:
+1  2  3  4  5  6  7  8  9  10
+
+
+
+TODO 1:
+==========
+enter any number
+4
+
+
+4 8 12 16 20 24 28 32 36 40
+	or
+
+1 x 4 = 4
+2 x 4 = 8
+
+
+TODO 2:
+find factorial of a number
+
+Enter any number 5
+fact is 120
+
+
+TODO 3:
+============
+print fibbonacci number series
+
+Enter range
+6
+
+0 1  1  2  3  5
+
+
+0  1  1  2  3  5 .....
+
+
+
+jump statements :
+java provides a number of statements that allow you to jump immediately to another line in a program those are ;
+1. break
+2. continue
+3. return
+
+
+
+1) break
+It is used to exit from a case in a switch statements and also used to exit from for, while, dowhile loops which will switch the control to the statement immediately after the end of the loop.
+
+package pack_forLoop;
+
+public class ForLoop
+{
+    public static void main(String[] args) {
+
+        for (int i = 1; i <=10 ; i++)
+        {
+            if( i == 5)
+            {
+                break;
+            }
+
+            System.out.print(i + "   ");
+        }
+    }
+}
+
+OP:
+1 2 3 4
+
+2) continue
+
+package pack_forLoop;
+
+public class ForLoop
+{
+    public static void main(String[] args) {
+
+        for (int i = 1; i <=10 ; i++)
+        {
+            if( i == 5)
+            {
+                continue;
+            }
+
+            System.out.print(i + "   ");
+        }
+    }
+}
+
+1 2 3 4 6 7 8 9 10
+
+
+
+3) return
+It is also a jump statement that is use to jump out of a function or method in execution.At that time it provides an option of carrying a value outside of the function.
+
+package pack_forLoop;
+
+public class ForLoop
+{
+    public static void main(String[] args) {
+
+        for (int i = 1; i <=10 ; i++)
+        {
+            if( i == 5)
+            {
+                return;
+            }
+
+            System.out.print(i + "   ");
+        }
+        System.out.println("out of loop");
+    }
+}
+
+
+OP
+1 2 3 4
+
+
+
+
+
+
+
+
+
+
+TODO 4:
+===========
+find if the entered number is prime or not
+
+Enter any number
+11
+
+prime number
+
+
+TODO 5:
+========
+*
+**
+***
+****
+*****
+
+
+
+
 
 
 

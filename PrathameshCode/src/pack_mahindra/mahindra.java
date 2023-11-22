@@ -16,5 +16,17 @@ public class mahindra {
 
 
         }
+        for (int k = 1; k <=5 ; k++) {
+            for (int l = 1; l <=10 ; l++) {
+                if(6-k>=l || k+5<=l){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+        }
     }
 }

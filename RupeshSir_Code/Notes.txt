@@ -573,6 +573,148 @@ TODO:
 * * * * *
 
 
+========================================
+DATE : 21 NOV for loop nested patterns and while loop
+
+TODO 1:
+*                 *
+* *             * *
+* * *         * * *
+* * * *     * * * *
+* * * * * * * * * *
+* * * * * * * * * *
+* * * *     * * * *
+* * *         * * *
+* *             * *
+*                 *
+
+
+While loop:
+=============
+syntax:
+
+intialization
+while(condition)
+{
+    stms
+    iteration
+}
+
+eg:
+package pack_while;
+
+public class WhileLoopDemo
+{
+    public static void main(String[] args) {
+
+        int i = 1;
+        while(i <=10)
+        {
+            System.out.print(i + " ");
+            i++;
+        }
+
+        System.out.println("out of loop");
+
+    }
+}
+
+
+Note: use for when we know in advance number of times we want to
+iterate,otherwise use while loop
+
+
+123 % 10 = 3
+123 / 10 = 12
+
+
+123 % 100 = 23
+123 / 100 = 1
+
+
+TODO: 2
+read a number and find if that number is a spy number or not
+Def: a number whose sum and product of all the digit is same
+
+
+Enter any number
+132
+
+it is a spy number
+
+
+
+do while loop:
+=================
+syntax:
+
+intialization
+
+do
+{
+    stm
+    iteration
+
+}while(condition);
+
+do while is exit controlled loop,whether a conditon is true or
+false do while will execute atleast once
+
+package pack_dowhile;
+
+public class DoWhile
+{
+    public static void main(String[] args) {
+
+        int i = 1;
+        do
+        {
+            System.out.println(i);
+            i++;
+
+        }while(i >=10);
+
+        System.out.println("out of loop ");
+
+
+    }
+}
+
+
+TODO 3:
+
+Enter any number
+10
+
+Enter any number
+23
+
+Enter any number
+-4
+
+Enter any number
+0
+
+Enter any number
+-1
+
+out of loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -573,6 +573,374 @@ TODO:
 * * * * *
 
 
+========================================
+DATE : 21 NOV for loop nested patterns and while loop
+
+TODO 1:
+*                 *
+* *             * *
+* * *         * * *
+* * * *     * * * *
+* * * * * * * * * *
+* * * * * * * * * *
+* * * *     * * * *
+* * *         * * *
+* *             * *
+*                 *
+
+
+While loop:
+=============
+syntax:
+
+intialization
+while(condition)
+{
+    stms
+    iteration
+}
+
+eg:
+package pack_while;
+
+public class WhileLoopDemo
+{
+    public static void main(String[] args) {
+
+        int i = 1;
+        while(i <=10)
+        {
+            System.out.print(i + " ");
+            i++;
+        }
+
+        System.out.println("out of loop");
+
+    }
+}
+
+
+Note: use for when we know in advance number of times we want to
+iterate,otherwise use while loop
+
+
+123 % 10 = 3
+123 / 10 = 12
+
+
+123 % 100 = 23
+123 / 100 = 1
+
+
+TODO: 2
+read a number and find if that number is a spy number or not
+Def: a number whose sum and product of all the digit is same
+
+
+Enter any number
+132
+
+it is a spy number
+
+
+
+do while loop:
+=================
+syntax:
+
+intialization
+
+do
+{
+    stm
+    iteration
+
+}while(condition);
+
+do while is exit controlled loop,whether a conditon is true or
+false do while will execute atleast once
+
+package pack_dowhile;
+
+public class DoWhile
+{
+    public static void main(String[] args) {
+
+        int i = 1;
+        do
+        {
+            System.out.println(i);
+            i++;
+
+        }while(i >=10);
+
+        System.out.println("out of loop ");
+
+
+    }
+}
+
+
+TODO 3:
+
+Enter any number
+10
+
+Enter any number
+23
+
+Enter any number
+-4
+
+Enter any number
+0
+
+Enter any number
+-1
+
+out of loop
+
+
+
+
+Nov 23rd : Methods Intro
+
+TODO 1:
+find if entered number of pronic or not
+
+A pronic number is a number that is the product of two consecutive integers.
+The number is of the form (n*(n+1)). For example, 56 is a pronic number because it is the product of 7 and 8.
+
+
+
+TODO 2:
+find if the entered number is krishnamurthy number or not
+Def : a number whos sum of factorial of every digit is equal to original number
+
+Enter any number
+145
+
+
+5! = 120
+4! = 24
+1! = 1
+
+  Methods :
+-----------
+Block of code that performs specific task.
+
+		or
+
+named block of code
+
+
+Predefined Methods
+--------------------
+already defined
+
+
+eg:
+println()
+nextInt()
+next()
+
+
+User Defined Methods
+------------------------
+methods which are created manually by a programmer for its own purpose.
+
+
+syntax:
+---------
+[<accessmodifier>] [static] [abstract/final/default] returntype/void  methodname([<args>])
+{
+	//code
+}
+
+eg:
+
+public void add()
+public static void sub()
+abstract void eat();
+protected final int show();
+private static String getName(int rno);
+
+
+Note: package is a default access specifier in java
+
+
+example 1:
+--------------
+package pack_methods;
+
+import java.util.Scanner;
+
+public class Calculator
+{
+
+    public void add()
+    {
+        int n1,n2,n3;
+        System.out.println("Enter 2 numbers");
+        Scanner scanner = new Scanner(System.in);
+        n1 = scanner.nextInt();
+        n2 = scanner.nextInt();
+
+        n3 = n1 + n2;
+        System.out.println("add is " + n3);
+    }
+
+    public static  void sub()
+    {
+        int n1,n2,n3;
+        System.out.println("Enter 2 numbers");
+        Scanner scanner = new Scanner(System.in);
+        n1 = scanner.nextInt();
+        n2 = scanner.nextInt();
+
+        n3 = n1 - n2;
+        System.out.println("sub is " + n3);
+    }
+
+
+    public static void main(String[] args) {
+
+
+        System.out.println("1.add\n2.sub");
+        Scanner scanner = new Scanner(System.in);
+        int choice = scanner.nextInt();
+
+        if(choice == 1)
+        {
+            Calculator calc = new Calculator();
+            calc.add();  //calling a method
+        }
+        else {
+            Calculator.sub();
+        }
+
+
+    }
+}
+
+
+EXAMPLE 2:
+
+
+package pack_methods;
+
+import java.time.LocalDateTime;
+
+public class Calculator
+{
+
+    public void show()
+    {
+        System.out.println("Welcome ");
+    }
+
+    public static void showDate()
+    {
+        System.out.println(LocalDateTime.now());
+
+    }
+    public static void main(String[] args) {
+        //classname objname = new classname()
+
+        Calculator objcalc = new Calculator();
+        objcalc.show();       //since show() is non static(instance member) it can be invoked only by using object
+
+        Calculator.showDate();   //since showDate() is static(classmember) it can be invoked using class name
+
+
+    }
+
+
+
+}
+
+
+
+TODO 1;
+
+class MyMath
+{
+	public void fact()
+	{
+
+	}
+
+	public static void reverse()
+	{
+		 //read a number and reverse
+	}
+
+	public static void main()
+	{
+		1.fact
+		2.reverse
+
+
+	}
+
+}
+
+
+
+
+TODO 2:
+
+class DOB
+{
+	public static void showDOB()
+	{
+
+
+	}
+
+
+	public void static main()
+	{
+
+	}
+}
+
+
+
+Enter year of birth
+1990
+Enter month of birth
+10
+Enter day of birth
+10
+
+
+you are 32 years,5 month, 5 day
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,13 +14,13 @@ public class Profitloss {
         if(sp>cp)
         {
             n = (sp-cp);
-            System.out.println("Profit");
+            System.out.println(" It's a Profit");
             System.out.println("Profit of Rs " + n);
         }
         else if(cp>sp)
         {
            n =  (cp-sp);
-            System.out.println("Loss");
+            System.out.println("It's a Loss");
             System.out.println("Loss of Rs " + n );
         }
         else

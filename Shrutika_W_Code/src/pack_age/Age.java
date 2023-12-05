@@ -9,7 +9,11 @@ public class Age {
         System.out.println("Enter your birth year: ");
         year = scan.nextInt();
 
-        if(year >= 2018)
+        if(year>2023)
+        {
+            System.out.println("Cannot determine the age");
+        }
+        else if(year >= 2018)
         {
             age = (2023-year);
             System.out.println("Your age is " + age + " and you are a Baby! ");
@@ -23,10 +27,6 @@ public class Age {
         {
             age = (2023-year);
             System.out.println("Your age is " + age + " and you are an Adult! ");
-        }
-        else if(year<0)
-        {
-            System.out.println("Year cannot be negative! ");
         }
         else if(year>0)
         {

@@ -917,6 +917,184 @@ Enter day of birth
 
 you are 32 years,5 month, 5 day
 
+Date : 5th DEC Array
+Array:
+===========
+variable that can store multiple values at the same time.
+				or
+collection of similar types of values
+
+
+
+syntax:
+===========
+datatype []arrname = new datatype[size];
+
+
+int arr[] = new int[5];
+	or
+
+int []arr;
+arr = new int[5];
+
+	or
+
+int []arr = {10,20,30,40,50};
+
+
+Note:
+1) in java array are reference type i,e memory allocation
+is done during run time.
+
+
+2) values (elements) of array can be accessed only by using indexes.
+and index always starts with 0
+
+3) the first index of array is called as lower bound and last indexe
+is called as upper bound of array
+
+		mid = (lb+ub)/2;
+
+4) arrays are always store in contigeous(Adjacent) memory location
+
+
+Types:
+==========
+1) single Dimension Array
+	that represents data in the form of single row
+
+
+2) 2darray
+		represents data in th form of row and col
+
+
+3) Jagged Array
+	array of arrays (array whose elements are arrays)
+
+
+
+
+
+package pack_arraydemo;
+
+import java.util.Scanner;
+
+public class ArrayDemo
+{
+    public static void main(String[] args) {
+
+        int arr[] = new int[5];
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter array ");
+        for (int i = 0; i < 5; i++) {
+
+            arr[i] = scan.nextInt();
+        }
+
+
+        System.out.println("array is ");
+        for(int i = 0;i<5;i++)
+        {
+            System.out.println(arr[i]);
+        }
+
+
+
+    }
+}
+
+
+
+TODO :
+read an array of size 10 and find
+sum of all numbers in that array
+
+Enter array
+12
+44
+67
+78
+546
+89
+90
+78
+56
+45
+
+sum is .....
+
+
+TODO 2: read an array of size 5 and find largest number
+in that arra
+
+
+Enter array
+45
+67
+89
+12
+34
+
+largest number is 89
+
+
+TODO 3:
+read any array of size 8 and find an entered number
+in the array
+
+Enter any array
+23
+45
+67
+89
+90
+12
+34
+55
+
+Enter any num to search
+89
+
+found at index 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

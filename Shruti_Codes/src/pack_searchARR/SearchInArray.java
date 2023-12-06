@@ -3,7 +3,7 @@ package pack_searchARR;
 import java.util.Scanner;
 
 public class SearchInArray {
-    public static int Search(int num,int arr[])
+    public static int Search(int num,int []arr)
     {
         for (int i = 0; i < 8; i++) {
             if (num == arr[i]) {
@@ -33,7 +33,7 @@ public class SearchInArray {
             System.out.println("not");
         }
         else{
-            System.out.println("found at "+ index);
+            System.out.println("found at " + index);
         }
 
     }

@@ -18,7 +18,7 @@ public class Repeating {
         int repeatedarr[] = new int[size];
         int n = 0;
 
-        System.out.println("Following numbers are repeating: ");
+
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
                 if (arr[i] == arr[j])
